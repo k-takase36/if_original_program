@@ -7,7 +7,7 @@
 # もしも誰かといた時は 解けるのかな魔法は
 # 張り裂けそうな胸の痛みは…
 
-# 状況をsituationへ代入
+# 状況を代入
 situations = ["1人", "誰かと一緒"]
 
 # 状況を表示する
@@ -39,14 +39,15 @@ end
 while true 
   print "対応を入力 > "
   my_coping = gets.chomp.to_i
-  break if(1..2).include?(my_coping)
-    puts "不正な値です。「1」または「2」を入力お願いします。"
+  break if(1..3).include?(my_coping)
+    puts "不正な値です。「1〜3」を入力お願いします。"
 end
 
-# 結果の表示
+# コメントを代入
 comment1 = "励ましのエール： "
 comment2 = "ファイトーー！いっぱーつ！"
 
+# 結果の表示
 if your_situation == 1 && my_coping == 1
   puts "#{comment1}応援してるぞ！ #{comment2}"
 elsif  your_situation == 1 && my_coping == 2
