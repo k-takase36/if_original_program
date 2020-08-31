@@ -1,4 +1,4 @@
-# if文オリジナルプログラム
+# if文オリジナルプログラム作成
 # DAPUMPさんの名曲「if」1番のサビをif文にしてみた
 
 # 「if」1番のサビ
@@ -6,6 +6,7 @@
 # (俺の行く末密かに暗示する人Honey!)
 # もしも誰かといた時は 解けるのかな魔法は
 # 張り裂けそうな胸の痛みは…
+# 出典：if（作詞：m.c.A・T 作曲：富樫明生）
 
 # 状況を代入
 situations = ["1人", "誰かと一緒"]
@@ -66,6 +67,6 @@ elsif  your_situation == 2 && my_coping == 1
   puts "#{comment1}既婚者ならSTOP！他の恋を探して下さい！#{comment2}"
   puts "#{comment3}"
 else 
-  puts "#{comment1}オロナミンif 飲んで元気出して下さい！#{comment2}"
+  puts "#{comment1}オロナミンif 飲んで元気出して！#{comment2}"
   puts "#{comment3}"
 end
